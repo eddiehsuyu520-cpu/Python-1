@@ -8,4 +8,4 @@ print()
 print()
 print()
 print()
-#先選取要複製的部分，再按組合鍵 shift+alt+↓
+#先選取要複製的部分，再按組合鍵 shift+alt+↓  就可以往下貼上
