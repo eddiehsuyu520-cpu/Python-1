@@ -5,6 +5,7 @@ print(flavor[3:])
 print(flavor[:])
 print(flavor[:14])
 print(flavor[13:15])
+print(flavor[19:20])  #超出範圍=>不顯示
 print(flavor[-7:-4])
 print(flavor[-7:0])
 print(flavor[-7:])
