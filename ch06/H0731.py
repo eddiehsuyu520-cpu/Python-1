@@ -14,8 +14,8 @@ else:
 select = int(input("1. 由小到大排序   2. 由大到小排序 :"))
 name = ['老張', '發叔', '李董', '豪哥', '小何']
 age= [54, 46, 50, 40, 38]
-for i in range(len(age)):
-    for j in range(len(age)-1):
+for i in range(len(age)-1):
+    for j in range(len(age)-1-i):
             if age[j] > age[j+1]:
                 age[j], age[j+1] = age[j+1], age[j]
                 name[j], name[j+1] = name[j+1], name[j]            
