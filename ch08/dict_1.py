@@ -8,5 +8,3 @@ print(dict1) # {'二月': '花月', '三月': '梅月'}
 dict1['一月'] = '正月' 
 print(dict1) # {'二月': '花月', '三月': '梅月', '一月': '正月'}
 print('1月' in dict1) # False 
-del dict1 
-#print(dict1) # NameError: name 'dict1' is not defined. Did you mean: 'dict'?
