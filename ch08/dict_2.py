@@ -94,4 +94,3 @@ print(dict1)
 # 使用 clear() 清空字典內的所有元素，使其變成空字典
 dict1.clear()
 print(dict1) # 輸出結果 {}
-del dict1 # 刪除 dict1 變數(含記憶體釋放)
