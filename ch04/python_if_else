@@ -1,0 +1,21 @@
+  
+    # 使用 := 將輸入轉為整數並存入 age，並將 and 改為 or
+if (age := int(input("請輸入年齡: "))) < 10 or age >= 65:
+    print(f"您的年齡是 {age} 歲：符合優惠身分（兒童或長者）")
+else:
+    print(f"您的年齡是 {age} 歲：一般身分")
+    
+''' 這是錯誤的 Python 寫法，因為在 Python 中這沒意義，反而會搞錯優先權
+     if ( 條件一 or 條件二 ):
+     Python 的 if 只需要這樣寫，條件跟條件之間直接用 or 連接
+     if   條件一 or 條件二: '''
+
+# # 假設 get_data() 是一個要跑很久的爬蟲或資料庫查詢
+if (data := get_data()) is not None:
+    process(data) # 直接使用剛剛存好的 data，不用重新呼叫 get_data()'''
+
+'''在 Python 的規則中，比較運算子（如 is、is not、<、>、==）的優先權，高於海象運算子（:=）。
+     下述範例中，先計算右邊的比較：先執行 get_data() is not None。得到布林值。如果 get_data() 有抓到資料，這整段會變成 True。進行海象賦值：最後執行 data := True執行 process(data) 時，因為傳進去的是 True 而不是原本的資料，程式就會直接崩潰或運作異常。
+   if data := get_data() is not None:
+      process(data) # 直接使用剛剛存好的 data，不用重新呼叫 get_data()'''
+
